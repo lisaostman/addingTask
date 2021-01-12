@@ -13,9 +13,9 @@ describe("TaskManager", () => {
     const taskManager = new TaskManager(0);
     let len = taskManager.tasks.length;
     taskManager.addTask("name", "description", "assignedTo", "dueDate")
-    if (len < taskManager.tasks.length) {
-      assert.ok(taskManager.tasks[0].assignedTo,'assignedTo');
-    }
+    
+      assert.ok(len < taskManager.tasks.length);
+    
   })
   
 })
